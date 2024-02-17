@@ -2,7 +2,7 @@
 if (!defined('_PS_VERSION_'))
 	exit;
 
-class DataLayer extends Module
+class GTM_DataLayer extends Module
 {
 	public function __construct()
 	{
