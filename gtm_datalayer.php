@@ -6,10 +6,10 @@ class DataLayer extends Module
 {
 	public function __construct()
 	{
-		$this->name = 'datalayer';
+		$this->name = 'gtm_datalayer';
 		$this->tab = 'analytics_stats';
 		$this->version = '1.0';
-		$this->author = 'petrovv77';
+		$this->author = 'francescoang';
 		$this->need_instance = 0;
 		$this->ps_versions_compliancy = array('min' => '1.5', 'max' => _PS_VERSION_);
 		$this->bootstrap = true;
@@ -21,7 +21,7 @@ class DataLayer extends Module
 
 		$this->confirmUninstall = $this->l('Are you sure you want to uninstall?');
 
-		if (!Configuration::get('MYMODULE_NAME'))
+		if (!Configuration::get('GTM_DATALAYER'))
 			$this->warning = $this->l('No name provided');
 	}
 
